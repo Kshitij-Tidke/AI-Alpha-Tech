@@ -8,8 +8,7 @@ import morgan from "morgan";
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: 'https://frontend-khaki-phi-99.vercel.app' }));
-// app.use(cors());
+app.use(cors());
 app.use(morgan("dev"));
 
 // Task Routes
