@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://your-backend.vercel.app/api/v1/task"; // Update with backend URL
+const API_URL = process.env.API_URL;
 
 export const getTasks = async () => {
   const response = await axios.get(API_URL);
